@@ -1,6 +1,45 @@
 # News Bot Frontend
 
 A modern React frontend for the News Bot application that provides AI-powered news assistance with real-time chat capabilities.
+## Tech Stack
+
+### Frontend Technologies
+- **React 18.2.0** - Modern JavaScript library for building user interfaces
+- **React DOM 18.2.0** - React rendering for the web
+- **Create React App** - Toolchain for React application development
+- **SCSS/Sass 1.62.1** - CSS preprocessor for enhanced styling capabilities
+- **JavaScript ES6+** - Modern JavaScript features (arrow functions, destructuring, async/await, etc.)
+
+
+### Styling & UI
+- **SCSS/Sass** - CSS preprocessor with variables, mixins, and nesting
+- **CSS Grid & Flexbox** - Modern layout systems
+- **CSS Custom Properties** - Dynamic theming and variables
+- **Responsive Design** - Mobile-first approach with breakpoints
+- **Glass-morphism Effects** - Modern UI design patterns
+- **Smooth Animations** - CSS transitions and keyframe animations
+
+### State Management
+- **React Hooks** - useState, useEffect, useRef for component state
+- **localStorage** - Browser storage for session persistence
+- **Context API** - Component state sharing (if needed)
+
+### API Integration
+- **Fetch API** - Modern HTTP client for backend communication
+- **RESTful API** - REST architecture for backend communication
+- **Environment Variables** - Configuration management
+- **Error Handling** - Comprehensive error management system
+
+### Build & Deployment
+- **Webpack** - Module bundler (via Create React App)
+- **Babel** - JavaScript transpiler (via Create React App)
+- **Production Build** - Optimized build for deployment
+- **Environment Configuration** - Development and production environments
+
+### Browser Support
+- **Modern Browsers** - Chrome, Firefox, Safari, Edge (latest versions)
+- **ES6+ Support** - Modern JavaScript features
+- **Responsive Design** - Cross-device compatibility
 
 ## Features
 
@@ -10,10 +49,10 @@ A modern React frontend for the News Bot application that provides AI-powered ne
 - ** Typing Indicators**: Visual feedback with animated dots when the bot is responding
 - ** Citation Support**: Display source citations with clickable links to original news articles
 - ** Responsive Design**: Mobile-first design that works seamlessly on all devices
-- **🎨 Modern UI**: Beautiful gradient design with smooth animations and glass-morphism effects
+- ** Modern UI**: Beautiful gradient design with smooth animations and glass-morphism effects
 - **⚡ Auto-resizing Input**: Smart textarea that grows with your message
-- **🔄 Session Reset**: One-click conversation reset with confirmation
-- **💾 Persistent History**: Chat history persists across browser sessions
+- ** Session Reset**: One-click conversation reset with confirmation
+- ** Persistent History**: Chat history persists across browser sessions
 
 ## Getting Started
 
@@ -21,7 +60,9 @@ A modern React frontend for the News Bot application that provides AI-powered ne
 
 - **Node.js** (v16 or higher recommended)
 - **npm** or **yarn** package manager
-- **Backend server** running on port 3000 (see backend documentation)
+-  **Backend Documentation**: For detailed backend implementation and E2E flow, see the [Backend E2E Flow Documentation](https://github.com/dam-8727/Rag_news_bot_backend/blob/main/docs/E2Eflow.md).
+
+- **Backend server** locally running on port 3000 butfor production  deployed on render  (see backend documentation)
 
 ### Installation
 
@@ -40,9 +81,9 @@ A modern React frontend for the News Bot application that provides AI-powered ne
    npm start
    ```
 
-4. Open [http://localhost:3002](http://localhost:3002) to view it in the browser.
+4. Open [http://localhost:3001](http://localhost:3001) to view it in the browser.
 
-> **Note**: The app will automatically open in your default browser. If it doesn't, manually navigate to `http://localhost:3002`. The frontend runs on port 3002 while the backend runs on port 3000.
+> **Note**: The app will automatically open in your default browser. If it doesn't, manually navigate to `http://localhost:3001`. The frontend runs on port 3001 while the backend runs on port 3000.
 
 
 
@@ -198,10 +239,10 @@ The `ApiService` class (`src/services/api.js`) handles all backend communication
 
 ```javascript
 // Environment-based API configuration
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:3000';
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:3001';
 ```
 
-- **Development**: Defaults to `http://localhost:3000`
+- **Development**: Defaults to `http://localhost:3001`
 - **Production**: Set via `REACT_APP_API_URL` environment variable
 - **Health Monitoring**: Built-in server status checking
 
