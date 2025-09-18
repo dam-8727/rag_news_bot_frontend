@@ -1,5 +1,5 @@
 // This is where we connect to our backend API
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://rag-news-bot-backend.onrender.com';
+const API_BASE_URL = process.env.REACT_APP_API_URL;
 
 // This class handles all communication with the backend
 class ApiService {
